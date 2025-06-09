@@ -1,0 +1,16 @@
+<h1>Books</h1>
+<ul>
+  {% for book in books %}
+    <li>
+      {{ book.title }} by {{ book.author.name }}
+      {% if book.is_available %}
+      <form action="{% url 'borrow_book' book.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit">Borrow</button>
+      </form>
+      {% else %}
+        Unavailable
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

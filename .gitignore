@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+
+# Virtual Environment
+venv/
+env/
+
+# Django
+*.db
+db.sqlite3
+*.pot
+*.pyc
+
+# VSCode or other editor configs
+.vscode/
+.idea/
+
+# Environment variables and secrets
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+*.tar
+*.gz
+*.bak
+docker-compose.override.yml
+
+
+# Migrations (optional to ignore if you want to regenerate them)
+**/migrations/*.py
+**/migrations/*.pyc
+!**/migrations/__init__.py
