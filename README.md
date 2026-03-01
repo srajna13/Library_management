@@ -1,4 +1,4 @@
-# Library_management (Docker + PostgreSQL Setup)
+# Library_management 
 
 ## Prerequisites
 
@@ -7,8 +7,8 @@
 
 Verify installation:
 
-docker --version
-docker compose version
+- docker --version
+- docker compose version
 
 ---
 
@@ -52,11 +52,6 @@ docker compose exec web python manage.py migrate
 
 ---
 
-## Create Superuser (Optional)
-
-docker compose exec web python manage.py createsuperuser
-
----
 
 ## Stop the Application
 
